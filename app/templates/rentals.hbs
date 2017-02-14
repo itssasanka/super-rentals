@@ -1,0 +1,12 @@
+<h2> List of rentals</h2>
+
+{{#link-to 'about' class="button"}}
+About Us
+{{/link-to}}
+
+{{#each model as |m|}}
+{{rental-listing rental=m}}
+{{/each}}
+
+
+{{outlet}}
