@@ -1,6 +1,8 @@
 FROM node
 
-MKDIR /code
+RUN mkdir /code
 WORKDIR /code
 
-ADD /code
+ADD . /code
+
+RUN npm install -g ember-cli
