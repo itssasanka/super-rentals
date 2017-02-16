@@ -14,7 +14,7 @@ the following things properly installed on your computer:
 - [Node.js](https://nodejs.org/) (with NPM)
 
 
-## Installation
+## Installation and running the App
 #### Without Docker
 - `npm install -g ember-cli`
 - `npm install`
