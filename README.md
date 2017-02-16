@@ -1,52 +1,30 @@
 # super-rentals
-
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Just rough hands-on to create a sample Ember app;
+Please refer to the official Ember site:
+https://guides.emberjs.com/v2.11.0/tutorial/ember-cli/
 
 ## Prerequisites
 
-You will need the following things properly installed on your computer.
+You will either need:
+- Docker
 
-* [Git](https://git-scm.com/)
-* [Node.js](https://nodejs.org/) (with NPM)
-* [Bower](https://bower.io/)
-* [Ember CLI](https://ember-cli.com/)
-* [PhantomJS](http://phantomjs.org/)
+(OR)
+
+the following things properly installed on your computer:
+- [Node.js](https://nodejs.org/) (with NPM)
+
 
 ## Installation
+#### Without Docker
+- `npm install -g ember-cli`
+- `npm install`
+- `ember serve --port 4000 --live-reload-port 5000`
 
-* `git clone <repository-url>` this repository
-* `cd super-rentals`
-* `npm install`
-* `bower install`
+#### With Docker
+- `make image`
+- `make ready`
+- `make rentals`
 
-## Running / Development
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+Your server is running inside a Docker container. You can access the container with `make enter`
 
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
-
-### Running Tests
-
-* `ember test`
-* `ember test --server`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](http://emberjs.com/)
-* [ember-cli](https://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
