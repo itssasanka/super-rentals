@@ -4,9 +4,15 @@
 About Us
 {{/link-to}}
 
-{{#each model as |m|}}
-{{rental-listing rental=m}}
-{{/each}}
+{{#list-filter
+   filter=(action 'filterByCity')
+   as |rentals|}}
+  <ul class="results">
+    {{#each rentals as |rentalUnit|}}
+      <li>{{rental-listing rental=rentalUnit}}</li>
+    {{/each}}
+  </ul>
+{{/list-filter}}
 
 
 {{outlet}}
