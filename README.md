@@ -19,11 +19,13 @@ the following things properly installed on your computer:
 - `npm install -g ember-cli`
 - `npm install`
 - `ember serve --port 4000 --live-reload-port 5000`
+- Go to `localhost:4000`
 
 #### With Docker
 - `make image`
 - `make ready`
 - `make rentals`
+- Go to `localhost:4000`
 
 
 Your server is running inside a Docker container. You can access the container with `make enter`
